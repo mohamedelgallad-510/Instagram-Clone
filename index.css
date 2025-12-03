@@ -3,3 +3,42 @@ html, body {
     padding: 0;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 344px;
+    margin: 0 auto;;
+}
+
+.logo {
+    width: 127px;
+    height: 60px;
+    padding: 15px;
+}
+
+.user-photo {
+    width: 34px;
+    height: 34px;
+    padding: 30px 15px;
+    border-radius: 50%;
+}
+
+.poster-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: red;
+}
+
+.poster-photo {
+    width: 34px;
+    height: 34px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50%;
+}
+
+.poster-name-loc {
+ line-height: 1px;
+}
