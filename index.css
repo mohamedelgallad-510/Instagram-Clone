@@ -27,7 +27,7 @@ header {
 .first-post {
     width: 344px;
     margin: 0 auto;
-    border-top: 2px solid red;
+    border-top: 2px solid blue;
 }
 
 .poster-info {
