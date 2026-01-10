@@ -33,7 +33,7 @@ header {
 .poster-info {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: left;
 }
 
 .poster-photo {
