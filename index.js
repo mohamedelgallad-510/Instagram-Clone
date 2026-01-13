@@ -28,3 +28,28 @@ const posts = [
     }
 ]
 
+const feed = document.getElementById("feed");
+
+function renderPosts() {
+    let feedHTML = "";
+    posts.forEach(function(post) {
+        feedHTML += `
+            <img src="${post.avatar}" class="poster-photo" alt="A portrait of ${post.name}.">
+            <div class="poster-name-loc">
+                <p>${post.name}</p>
+                <p>${post.location}</p>
+            </div>
+            <img src="${post.post}" alt="Post by ${post.username}.">
+            <div class="post-details">
+                <img src="images/icon-heart.png" class="icon">
+                <img src="images/icon-comment.png" class="icon">
+                <img src="images/icon-dm.png" class="icon">
+                <p><strong>${post.likes} likes</strong></p>
+                <p><strong>${post.username}</strong> ${post.comment}</p>
+            </div>
+        `;
+    });
+    feed.innerHTML = feedHTML;
+}
+
+renderPosts();
