@@ -1,6 +1,6 @@
 html, body {
-    margin: 20;
-    padding: 20;
+    margin: 10;
+    padding: 10;
 }
 
 header {
@@ -8,42 +8,49 @@ header {
     flex-direction: row;
     justify-content: space-around;
     width: 344px;
-    margin: 0 auto;;
+    margin: 0 auto;
 }
 
 .logo {
     width: 127px;
     height: 60px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .user-photo {
     width: 34px;
     height: 34px;
-    padding: 30px 15px;
+    padding: 10px 10px;
     border-radius: 50%;
 }
 
 .first-post {
     width: 344px;
     margin: 0 auto;
-    border-top: 2px dotted red;
+    border-top: 1px solid #ececec;
 }
 
 .poster-info {
     display: flex;
     flex-direction: row;
     align-items: left;
+    margin: 0;
+    padding: 0;
 }
 
 .poster-photo {
     width: 34px;
     height: 34px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    border-radius: 0%;
 }
 
 .poster-name-loc {
     line-height: 1px;
+}
+
+p {
+    margin-top: 16px;
 }
