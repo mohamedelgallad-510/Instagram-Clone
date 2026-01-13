@@ -68,13 +68,25 @@ p {
     height: 375px;
     margin-top: 8px;
 }
+
 .post-icons {
     display: flex;
     flex-direction: row;
 }
 
 .icon {
-    padding: 8px 0px 8px 8px;
+    padding: 5px;
     height: 23px;
     width: 23px;
+}
+
+.post-likes-comments {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.no-margin {
+    margin: 0;
 }

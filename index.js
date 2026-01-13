@@ -46,8 +46,10 @@ function renderPosts() {
                 <img src="images/icon-comment.png" class="icon">
                 <img src="images/icon-dm.png" class="icon">
             </div>
-                <p><strong>${post.likes} likes</strong></p>
-                <p><strong>${post.username}</strong> ${post.comment}</p>
+            <div class="post-likes-comments">
+                <p class="no-margin"><strong>${post.likes} likes</strong></p>
+                <p class="no-margin"><strong>${post.username}</strong> ${post.comment}</p>
+            </div>
             </div>
         `;
     });
