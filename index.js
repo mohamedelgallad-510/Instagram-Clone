@@ -41,15 +41,15 @@ function renderPosts() {
             </div>
             <img class="post-image" src="${post.post}" alt="Post by ${post.username}.">
             <div class="post-details">
-            <div class="post-icons">
-                <img src="images/icon-heart.png" class="icon">
-                <img src="images/icon-comment.png" class="icon">
-                <img src="images/icon-dm.png" class="icon">
-            </div>
-            <div class="post-likes-comments">
-                <p class="no-margin"><strong>${post.likes} likes</strong></p>
-                <p class="no-margin"><strong>${post.username}</strong> ${post.comment}</p>
-            </div>
+                <div class="post-icons">
+                    <img src="images/icon-heart.png" class="icon">
+                    <img src="images/icon-comment.png" class="icon">
+                    <img src="images/icon-dm.png" class="icon">
+                </div>
+                <div class="post-likes-comments">
+                    <p class="no-margin"><strong>${post.likes} likes</strong></p>
+                    <p class="no-margin"><strong>${post.username}</strong> ${post.comment}</p>
+                </div>
             </div>
         `;
     });
