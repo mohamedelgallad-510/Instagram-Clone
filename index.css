@@ -7,7 +7,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 344px;
+    width: 375px;
     margin: 0 auto;
     border: 1px solid black;
 }
@@ -54,4 +54,27 @@ header {
 
 p {
     margin-top: 16px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    margin: 0 auto;
+}
+
+.post-image {
+    width: 375px;
+    height: 375px;
+    margin-top: 8px;
+}
+.post-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    padding: 8px 0px 8px 8px;
+    height: 23px;
+    width: 23px;
 }
