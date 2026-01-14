@@ -12,6 +12,10 @@ header {
     border: 1px solid black;
 }
 
+p {
+    margin-top: 16px;
+}
+
 .logo {
     width: 127px;
     height: 60px;
@@ -46,10 +50,6 @@ header {
     padding-right: 10px;
     padding-top: 8px;
     border-radius: 0%;
-}
-
-p {
-    margin-top: 16px;
 }
 
 .posts {
