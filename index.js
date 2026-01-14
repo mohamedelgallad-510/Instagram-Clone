@@ -31,7 +31,7 @@ const posts = [
 const feed = document.getElementById("feed");
 
 function renderPosts() {
-    let feedHTML = "";
+    let feedHTML = ""
     posts.forEach(function(post) {
         feedHTML += `
             <img src="${post.avatar}" class="poster-photo" alt="A portrait of ${post.name}.">
@@ -51,9 +51,9 @@ function renderPosts() {
                     <p class="no-margin"><strong>${post.username}</strong> ${post.comment}</p>
                 </div>
             </div>
-        `;
-    });
-    feed.innerHTML = feedHTML;
+        `
+    })
+    feed.innerHTML = feedHTML
 }
 
-renderPosts();
+renderPosts()
