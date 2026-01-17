@@ -86,3 +86,14 @@ p {
 .no-margin {
     margin: 0;
 }
+
+.post-details-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post-details-top p {
+    margin: 0;
+    padding: 0;
+}

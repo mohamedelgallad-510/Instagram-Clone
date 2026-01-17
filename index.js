@@ -34,10 +34,12 @@ function renderPosts() {
     let feedHTML = ""
     posts.forEach(function(post) {
         feedHTML += `
-            <img src="${post.avatar}" class="poster-photo" alt="A portrait of ${post.name}.">
-            <div class="poster-name-loc">
-                <p>${post.name}</p>
-                <p>${post.location}</p>
+            <div class="post-details-top">
+                <img src="${post.avatar}" class="poster-photo" alt="A portrait of ${post.name}.">
+                <div class="poster-name-loc">
+                    <p>${post.name}</p>
+                    <p>${post.location}</p>
+                </div>
             </div>
             <img class="post-image" src="${post.post}" alt="Post by ${post.username}.">
             <div class="post-details">
