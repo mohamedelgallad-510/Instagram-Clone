@@ -1,5 +1,4 @@
-import { uuid } from 'https://cdn.jsdelivr.net/npm/uuid@13.0.0/+esm'
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid'
 
 const posts = [
     {
@@ -63,15 +62,16 @@ function renderPosts() {
         </div>
         `
     })
+    console.log(feedHTML)
     feed.innerHTML = feedHTML
 }
 
 renderPosts()
 
-document.addEventListener("dblclick", function(e) {
+/* document.addEventListener("dblclick", function(e) {
     if (e.target.classList.contains("post-image")) {
         const postIndex = Array.from(feed.getElementsByClassName("post-image")).indexOf(e.target);
         posts[postIndex].likes += 1;
         renderPosts();
     }
-});
+}); */
