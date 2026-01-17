@@ -34,6 +34,7 @@ function renderPosts() {
     let feedHTML = ""
     posts.forEach(function(post) {
         feedHTML += `
+        <div class="post">
             <div class="post-details-top">
                 <img src="${post.avatar}" class="poster-photo" alt="A portrait of ${post.name}.">
                 <div class="poster-name-loc">
@@ -53,6 +54,7 @@ function renderPosts() {
                     <p class="no-margin"><strong>${post.username}</strong> ${post.comment}</p>
                 </div>
             </div>
+        </div>
         `
     })
     feed.innerHTML = feedHTML

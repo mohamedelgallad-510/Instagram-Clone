@@ -30,9 +30,7 @@ p {
 }
 
 .post {
-    width: 344px;
-    margin: 0 auto;
-    border-top: 1px solid #ececec;
+    margin: 20px 0px;
 }
 
 .poster-info {
