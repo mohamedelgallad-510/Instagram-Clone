@@ -38,16 +38,16 @@ function renderPosts() {
             <div class="post-details-top">
                 <img src="${post.avatar}" class="poster-photo" alt="A portrait of ${post.name}.">
                 <div class="poster-name-loc">
-                    <p>${post.name}</p>
+                    <p><b>${post.name}</b></p>
                     <p>${post.location}</p>
                 </div>
             </div>
             <img class="post-image" src="${post.post}" alt="Post by ${post.username}.">
             <div class="post-details">
                 <div class="post-icons">
-                    <img src="images/icon-heart.png" class="icon">
-                    <img src="images/icon-comment.png" class="icon">
-                    <img src="images/icon-dm.png" class="icon">
+                    <i class="fa-regular fa-heart icon"></i>
+                    <i class="fa-regular fa-comment icon"></i>
+                    <i class="fa-regular fa-paper-plane icon"></i>
                 </div>
                 <div class="post-likes-comments">
                     <p class="no-margin"><strong>${post.likes} likes</strong></p>
@@ -61,3 +61,11 @@ function renderPosts() {
 }
 
 renderPosts()
+
+document.addEventListener("dblclick", function(e) {
+    if (e.target.classList.contains("post-image")) {
+        const postIndex = Array.from(feed.getElementsByClassName("post-image")).indexOf(e.target);
+        posts[postIndex].likes += 1;
+        renderPosts();
+    }
+});
