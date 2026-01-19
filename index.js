@@ -41,6 +41,16 @@ const feed = document.getElementById("feed");
 function renderPosts() {
     let feedHTML = ""
     posts.forEach(function(post) {
+
+        let isLikedClass = ""
+        if (post.isLiked) {
+            isLikedClass = `fa-solid`
+        } else {
+            isLikedClass = `fa-regular`
+        }
+
+        console.log(isLikedClass)
+
         feedHTML += `
         <div class="post">
             <div class="post-details-top">
@@ -53,7 +63,7 @@ function renderPosts() {
             <img class="post-image" src="${post.post}" alt="Post by ${post.username}.">
             <div class="post-details">
                 <div class="post-icons">
-                    <i class="fa-regular fa-heart icon" data-like='${post.uuid}'></i>
+                    <i class="${isLikedClass} fa-heart icon" data-like='${post.uuid}'></i>
                     <i class="fa-regular fa-comment icon" data-comment='${post.uuid}'></i>
                     <i class="fa-regular fa-paper-plane icon" data-share='${post.uuid}'></i>
                 </div>
